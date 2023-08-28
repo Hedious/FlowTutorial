@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
             FlowTutorialTheme {
                 val mainViewModel: MainViewModel by viewModels()
                 //val mainViewMod = viewModel<MainViewModel>()
-                val time = mainViewModel.countDownFlow.collectAsState(initial = 0)
+                val time = mainViewModel.countDownFlow.collectAsState(initial = 10)
                 Box(
                     modifier = Modifier.fillMaxSize(),
                 ) {
